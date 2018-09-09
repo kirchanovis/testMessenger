@@ -1,0 +1,35 @@
+.reply{
+    padding: 15px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  
+  .reply:before, .reply:after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  input{
+    padding: 10px;
+    border: none;
+    background-color: inherit;
+  }
+  
+  input:focus, button:focus{
+    outline: 0;
+  }
+  button{
+    background-color: #444;
+    color: #fff;
+    padding:10px;
+    vertical-align: middle;
+    border: none;
+    cursor: pointer;
+    font-size: .85em;
+    border-radius: 10px;
+  }

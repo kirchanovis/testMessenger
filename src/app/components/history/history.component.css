@@ -1,0 +1,87 @@
+.chatbox{
+    padding: 0 20px 10px 0;
+    width: 100%;
+    height: 350px;
+    overflow-y: scroll;
+    overflow-x: hidden
+}
+  
+.time{
+    text-align: center;
+    font-size: .70em;
+    color: #666;
+    letter-spacing: 1.2px;
+    word-spacing: 2px;
+  }
+  
+  #message{
+    width: 100%;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .matt-line{
+    max-width: 70%;
+    min-width: 10%;
+    margin-top: 20px;
+    display: inline-block;
+    font-size: .85em;
+    position: relative;
+    animation: scaler 150ms ease-out;
+  }
+  
+  .matt-line p:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -10px;
+    top: 0;
+    width: 0;
+    border-width: 10px 10px 0;
+    border-style: solid;
+    border-color: #444 transparent;
+  }
+  
+  .matt-line p{
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    word-wrap: break-word;
+    font-weight: 500;
+  }
+  
+  #message:before, #message:after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  
+  #message li{
+    background-color: #e5eaec;
+    color: #222;
+    font-size: .85em;
+    border-radius: 10px;
+    position: relative;
+    padding: 10px;
+    margin: 1% 0;
+    max-width: 70%;
+    min-width: 10%;  
+    float: right;
+    word-wrap: break-word;
+    clear: both;
+    animation: scaler 150ms ease-out;
+    font-weight: 500;
+  }
+  
+  #message .first:after{
+    content: "";
+    display: block;
+    position: absolute;
+    right: -10px;
+    top: 0;
+    width: 0;
+    border-width: 10px 10px 0;
+    border-style: solid;
+    border-color: #e5eaec transparent;
+  }

@@ -1,0 +1,12 @@
+<div class="card-body">
+  <a class='thumbnail' href='#'>
+    {{user.shortname}}
+  </a>
+  <div class='content'>
+    <h3>{{user.name}}</h3>
+    <span class='preview'>Город: {{user.city}}</span>
+    <span class='preview'>Возраст: {{user.age}}</span>
+    <span class='preview'>О себе: {{user.description}}</span>
+  </div>
+  <button (click)="open.emit()"> Открыть сообщения</button>
+</div>

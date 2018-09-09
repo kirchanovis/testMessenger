@@ -1,0 +1,6 @@
+<section class="reply" id="reply">
+  <form  [formGroup]="sendForm" (submit)="send.emit(sendForm)">
+    <input type="text" placeholder="Введите текст" formControlName="message">
+    <button>Отправить</button>
+  </form>
+</section>

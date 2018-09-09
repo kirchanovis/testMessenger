@@ -1,0 +1,8 @@
+<section class="chatbox">
+  <ul id="message" *ngFor="let message of messages">
+    <div *ngIf="message.sender == 'to me'" class="matt-line">
+      <p>{{message.text}}</p>
+    </div>
+    <li *ngIf="message.sender == 'from me'" class="first">{{message.text}}</li>
+  </ul>
+</section>

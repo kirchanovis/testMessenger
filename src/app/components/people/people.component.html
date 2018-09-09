@@ -1,0 +1,12 @@
+<div class="card-body">
+  <ul>
+    <li *ngFor="let user of users">
+      <span (click)="select.emit(user.id)" class='thumbnail' href='#'>
+        {{user.shortname}}
+      </span>
+      <div class='content' (click)="select.emit(user.id)" [ngStyle]="{'display':display}">
+        <h3>{{user.name}}</h3>
+      </div>
+    </li>
+  </ul>
+</div>
